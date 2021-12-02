@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7D978F82273EAFD200640C0F /* Rotten_gamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F81273EAFD200640C0F /* Rotten_gamesApp.swift */; };
-		7D978F84273EAFD200640C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F83273EAFD200640C0F /* ContentView.swift */; };
+		7D978F84273EAFD200640C0F /* ReviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F83273EAFD200640C0F /* ReviewList.swift */; };
 		7D978F86273EAFD400640C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D978F85273EAFD400640C0F /* Assets.xcassets */; };
 		7D978F89273EAFD400640C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D978F88273EAFD400640C0F /* Preview Assets.xcassets */; };
+		7D978F93273EB0E300640C0F /* ReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F92273EB0E300640C0F /* ReviewData.swift */; };
+		7D978F95273EB32200640C0F /* RottenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F94273EB32200640C0F /* RottenViewModel.swift */; };
+		7D978F97273EBF9E00640C0F /* ReviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F96273EBF9E00640C0F /* ReviewCard.swift */; };
+		7D978F9A273EC46800640C0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7D978F99273EC46800640C0F /* Kingfisher */; };
+		7D978F9C273ECD4300640C0F /* RottenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D978F9B273ECD4300640C0F /* RottenDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D978F7E273EAFD200640C0F /* Rotten games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotten games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D978F81273EAFD200640C0F /* Rotten_gamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotten_gamesApp.swift; sourceTree = "<group>"; };
-		7D978F83273EAFD200640C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D978F83273EAFD200640C0F /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
 		7D978F85273EAFD400640C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D978F88273EAFD400640C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D978F92273EB0E300640C0F /* ReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewData.swift; sourceTree = "<group>"; };
+		7D978F94273EB32200640C0F /* RottenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenViewModel.swift; sourceTree = "<group>"; };
+		7D978F96273EBF9E00640C0F /* ReviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCard.swift; sourceTree = "<group>"; };
+		7D978F9B273ECD4300640C0F /* RottenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D978F9A273EC46800640C0F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				7D978F81273EAFD200640C0F /* Rotten_gamesApp.swift */,
-				7D978F83273EAFD200640C0F /* ContentView.swift */,
+				7D978F91273EB08A00640C0F /* Model */,
+				7D978F90273EB06600640C0F /* View */,
+				7D978F8F273EB04400640C0F /* ModelView */,
 				7D978F85273EAFD400640C0F /* Assets.xcassets */,
 				7D978F87273EAFD400640C0F /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				7D978F88273EAFD400640C0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D978F8F273EB04400640C0F /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				7D978F94273EB32200640C0F /* RottenViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		7D978F90273EB06600640C0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D978F83273EAFD200640C0F /* ReviewList.swift */,
+				7D978F96273EBF9E00640C0F /* ReviewCard.swift */,
+				7D978F9B273ECD4300640C0F /* RottenDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D978F91273EB08A00640C0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D978F92273EB0E300640C0F /* ReviewData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = "Rotten games";
+			packageProductDependencies = (
+				7D978F99273EC46800640C0F /* Kingfisher */,
+			);
 			productName = "Rotten games";
 			productReference = 7D978F7E273EAFD200640C0F /* Rotten games.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 7D978F75273EAFD200640C0F;
+			packageReferences = (
+				7D978F98273EC46800640C0F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7D978F7F273EAFD200640C0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D978F84273EAFD200640C0F /* ContentView.swift in Sources */,
+				7D978F95273EB32200640C0F /* RottenViewModel.swift in Sources */,
+				7D978F84273EAFD200640C0F /* ReviewList.swift in Sources */,
+				7D978F9C273ECD4300640C0F /* RottenDetail.swift in Sources */,
+				7D978F97273EBF9E00640C0F /* ReviewCard.swift in Sources */,
+				7D978F93273EB0E300640C0F /* ReviewData.swift in Sources */,
 				7D978F82273EAFD200640C0F /* Rotten_gamesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D978F98273EC46800640C0F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D978F99273EC46800640C0F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D978F98273EC46800640C0F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D978F76273EAFD200640C0F /* Project object */;
 }

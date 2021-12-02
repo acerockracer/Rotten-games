@@ -11,7 +11,7 @@ import SwiftUI
 struct Rotten_gamesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReviewListView()
         }
     }
 }
