@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ReviewListView: View {
     
+// Provides main view and navigation to game review
+    
     private let gridItems = [GridItem()]
     @ObservedObject var viewModel = RottenViewModel()
     

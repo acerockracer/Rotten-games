@@ -10,6 +10,8 @@ import Kingfisher
 
 struct RottenDetails: View {
     
+// gives details and reviews
+    
     @ObservedObject var rottenTools = RottenTools()
     
     let ReviewData: ReviewData
@@ -24,6 +26,8 @@ struct RottenDetails: View {
     }
     
     var body: some View {
+
+// gives the description and geral look of the page
 
         ZStack {
             backgroundColor.edgesIgnoringSafeArea(.all)
@@ -69,6 +73,10 @@ struct RottenDetails: View {
                                     .padding(.horizontal, 20)
                                 
                             }
+                            
+                            // gives the reviews of critics and alows user to flag a review if they thinks its biasis or false
+                            // also alows users to do their own review
+                            // all reviews are based on a 1-10 scale
                             
                             VStack(spacing: 1) {
                                 ForEach(0..<2) { i in

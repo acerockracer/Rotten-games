@@ -8,6 +8,8 @@
 import SwiftUI
 import Kingfisher
 
+// provides the cards in the review card list
+
 struct ReviewCard: View {
     let reviewData: ReviewData
     let rottenViewModel: RottenViewModel
@@ -20,6 +22,8 @@ init(ReviewData: ReviewData, rottenViewModel: RottenViewModel) {
     self.backgroundColor = Color(rottenViewModel.detectBackgroundColor(forDevs: ReviewData.devs))
 }
 
+// gives overview info on game and dev
+    
 var body: some View {
     ZStack{
         VStack(alignment: .leading){

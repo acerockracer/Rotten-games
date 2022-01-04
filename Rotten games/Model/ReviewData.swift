@@ -7,6 +7,8 @@
 
 import Foundation
 
+// sorts the data
+
 struct ReviewData: Decodable, Identifiable {
     let id: String
     let description: String
